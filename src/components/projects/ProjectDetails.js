@@ -9,7 +9,7 @@ import 'moment/locale/tr';
 
 const ProjectDetails = (props) => {
 
-
+    console.log("details: ", props)
     const { project, auth } = props;
     if (!auth.uid) return <Redirect to="/signin" />
     if (project) {
